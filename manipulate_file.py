@@ -18,3 +18,11 @@ with open(file_name, "w") as file: # NOTE: "w" means "open the file for writing"
     file.write("\n")
     file.write("\n")
     file.write("Goodbye")
+
+# Reading Files
+
+file_name = "my_message.txt" # refers to a file path relative to the path from which you invoke your your script.
+
+with open(file_name, "r") as file: # NOTE: "r" means "open the file for reading"
+    contents = file.read()
+    print(contents)
