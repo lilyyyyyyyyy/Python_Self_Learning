@@ -1,2 +1,2 @@
 n = int(input().strip())
-print(bin(n))
+print(bin(n)[2:].split('0'))
